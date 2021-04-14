@@ -1,4 +1,4 @@
-package 티켓판매V2;
+package 티켓판매V3;
 
 public class Theater {
     private TicketSeller ticketSeller;

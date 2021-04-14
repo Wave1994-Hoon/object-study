@@ -1,4 +1,4 @@
-package 티켓판매V2;
+package 티켓판매V3;
 
 /* 티켓 판매원 */
 public class TicketSeller {
@@ -29,6 +29,6 @@ public class TicketSeller {
     }
 
     public void sellToV2(Audience audience) {
-        ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
+        ticketOffice.plusAmount(audience.buyV2(ticketOffice.getTicket()));
     }
 }

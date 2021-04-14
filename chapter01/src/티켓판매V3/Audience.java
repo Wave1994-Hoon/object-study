@@ -1,4 +1,4 @@
-package 티켓판매V2;
+package 티켓판매V3;
 
 /* 관람겍 */
 public class Audience {
@@ -13,7 +13,8 @@ public class Audience {
         return bag;
     }
 
-    public Long buy(Ticket ticket) {
+    @Deprecated
+    public Long buyV1(Ticket ticket) {
         if (bag.hasInvitation()) {
             bag.setTicket(ticket);
             return 0L;
@@ -22,6 +23,10 @@ public class Audience {
             bag.minusAmount(ticket.getFee());
             return ticket.getFee();
         }
+    }
+
+    public Long buyV2(Ticket ticket) {
+        return bag.hold(ticket);
     }
 }
 
