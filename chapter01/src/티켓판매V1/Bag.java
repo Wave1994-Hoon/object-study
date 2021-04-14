@@ -1,4 +1,4 @@
-package 티켓판매App;
+package 티켓판매V1;
 
 /* 관람객이 소지품을 보관할 객체 */
 public class Bag {

@@ -1,4 +1,4 @@
-package 티켓판매App;
+package 티켓판매V1;
 
 import java.time.LocalDateTime;
 
