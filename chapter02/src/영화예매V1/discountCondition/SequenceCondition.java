@@ -1,6 +1,9 @@
-package 영화예매V1;
+package 영화예매V1.discountCondition;
 
-public class SequenceCondition implements DiscountCondition{
+import 영화예매V1.Screening;
+
+/* Screening 의 상영 순번 일치 확인 */
+public class SequenceCondition implements DiscountCondition {
 
     private int sequence;
 
